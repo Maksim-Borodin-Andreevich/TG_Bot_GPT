@@ -10,7 +10,7 @@ from handlers import router
 
 
 async def main():
-    bot = Bot(token=config.BOT_TOKEN, parse_mode=ParseMode.HTML) # параметр parse_mode отвечает за используемую по умолчанию разметку сообщений
+    bot = Bot(token=config.BOT_TOKEN)  
     dp = Dispatcher(storage=MemoryStorage()) # параметр storage=MemoryStorage() говорит о том, что все 
     # данные бота, которые мы не сохраняем в БД (к примеру состояния), будут стёрты при перезапуске
     dp.include_router(router)

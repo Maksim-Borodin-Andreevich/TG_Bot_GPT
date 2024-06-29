@@ -3,12 +3,11 @@ from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup, KeyboardBu
 
 price=[
     [
-    [InlineKeyboardButton(text="💳 Купить 75 vp", callback_data="buy_75")],
-    
-    [InlineKeyboardButton(text="💳 Купить 1000 vp", callback_data="buy_1000")],
+    InlineKeyboardButton(text="💳 Купить 75 vp", callback_data="buy_75"),
+    InlineKeyboardButton(text="💳 Купить 1000 vp", callback_data="buy_1000"),
      
     
-    [InlineKeyboardButton(text="💳 Купить 95959 vp", callback_data="buy_95959")],
+    InlineKeyboardButton(text="💳 Купить 95959 vp", callback_data="buy_95959"),
     ],
     
     [InlineKeyboardButton(text="🔎 Помощь", callback_data="help")]
